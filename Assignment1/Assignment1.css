@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    background-color: rgb(17, 127, 231);
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+}
+
+#mytopbar
+{
+    height:7vh;
+    width: 100vw;
+    display: none;
+    position: relative;
+}
+#mymainpart
+{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+
+}
+
+#sidebar
+{
+   min-height: 100vh;
+    width: 16vw;
+    background-color: rgba(1, 1, 41, 0.363);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    overflow: auto;
+    left: 0;
+}
+
+#mainpart
+{
+    height: 100%;
+    width: 84vw;
+   left: 16vw;
+   position: absolute;
+   overflow-y: auto;
+}
+
+#titlebar
+{
+    text-align: center;
+    padding: 10px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:110%;
+    margin-bottom: 30px;
+}
+#OmTitle
+{
+    color: rgb(231, 138, 138);
+}
+
+#options
+{
+    color: white;
+    font-size: 220%;
+    font-family: Arial;
+    list-style-type: none;
+}
+#options li
+{
+    padding: 10px;
+    margin: 20px;
+    width: fit-content;
+    position: relative;
+}
+
+#options li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#logout
+{
+    margin: 30px;
+    position: absolute;
+    bottom: 30px;
+    width: fit-content;
+}
+
+#log
+{
+    padding: 12px;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+
+}
+
+#welcomePart
+{
+    width: 100%;
+    padding: 18px;
+    font-size: 130%;
+    border: 1.8px solid beige;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+#gridData
+{
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: fit-content;
+    gap: 18px;
+    border: 2.3px solid beige;
+}
+.grid1{
+    width: 100%;
+    border: 3.5px solid snow;
+    height: 65vh;
+    border-radius: 20px;
+}
+.image
+{
+    width: 100%;
+    height: 40%;
+    background-image: linear-gradient(rgb(41, 11, 151),rgb(75, 125, 198));
+    border-top-left-radius: 18.5px;
+    border-top-right-radius: 18.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myimage
+{
+    height: 100%;
+    width: 50%;
+    margin: 10px;
+}
+
+.myplayer
+{
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    color: white;
+    font-family: Arial;
+    background-color: brown;
+    border-bottom-right-radius: 17.5px;
+    border-bottom-left-radius: 17.5px;
+}
+
+#playerTitle
+{
+    text-align: center;
+    font-size: 200%;
+    padding: 10px;
+}
+
+.scoreData
+{
+    text-align: center;
+    
+}
+.runs
+{
+    text-shadow: 1.5px 1.5px 1.5px black;
+}
+.data{
+    padding: 10px;
+}
+.ratings
+{
+    color: rgb(232, 226, 61);
+    padding: 10px;
+}
+
+.city
+{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    background-color: rgb(41, 100, 9);
+    color: white;
+    font-size: 160%;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 2.4px 2.5px 2.7px rgb(135, 9, 9);
+}
+
+.bat
+{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    background-color: rgb(7, 17, 2);
+    color: white;
+    font-size: 160%;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 2.4px 2.5px 2.7px rgb(135, 9, 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mybat
+{
+    height: 40px;
+    width: 40px;
+}
+
+.grid1:hover
+{
+    box-shadow: 2.8px 3.5px 5px black;
+    cursor: pointer;
+}
+
+.mycards{
+    padding: 20px;
+    text-align: justify;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1.5px 1.5px 1.5px #424242;
+}
+
+.bowlerData
+{
+    color: white;
+}
+
+.userprofile
+{
+    height: fit-content;
+    width: 100%;
+    border: 1.8px solid beige;
+    padding: 20px;
+}
+
+.userdata
+{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.matchesPlayed{
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    border: 2.3px solid beige;
+    box-shadow: 1.8px 2.3px 4.5px black;
+    background-color: rgb(7, 100, 43);
+    border-radius: 30px;
+}
+
+
+
+
+
+#playedMatches,#matchesWon,#matchesLost,#username
+{
+    color: white;
+    font-size: 160%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1.8px 1.7px 2.8px black;
+}
+
+.dataimage
+{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    background-image: linear-gradient(red,blue);
+    margin-top: 30px;
+}
+
+.dataimage img
+{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:950px) {
+    .container
+{
+    background-color: rgb(17, 127, 231);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#mytopbar
+{
+    height:8vh;
+    width: 100vw;
+    display: block;
+    background-color: #424242;
+    position: relative;
+}
+
+#mymainpart
+{
+    display: flex;
+    height: 95vh;
+    width: 100vw;
+    overflow-y: auto;
+    position: relative;
+
+}
+
+#sidebar
+{
+    width: 27vw;
+    background-color: rgba(1, 1, 41, 0.363);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: -30vw;
+    opacity: 0.98;
+    transition: 0.2s ease;
+}
+
+#mainpart
+{
+   width: 100vw;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+}
+
+#menu
+{
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.dot
+{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 8px;
+}
+.dot:last-child
+{
+    margin-bottom: none;
+}
+
+#menu:hover .dot{
+    background-color: rgb(58, 227, 139);
+}
+
+#titlebar
+{
+    text-align: center;
+    padding: 10px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:75%;
+    margin-bottom: 30px;
+}
+#OmTitle
+{
+    color: rgb(231, 138, 138);
+}
+
+#options
+{
+    color: white;
+    font-size: 150%;
+    font-family: Arial;
+    list-style-type: none;
+}
+#options li
+{
+    padding: 10px;
+    margin: 20px;
+    width: fit-content;
+    position: relative;
+}
+
+#options li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#logout
+{
+    margin: 30px;
+    position: absolute;
+    bottom: 30px;
+    width: 60%;
+}
+
+#log
+{
+    padding: 8px;
+    background-color: red;
+    border-radius: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 72%;
+    font-weight: 600;
+    
+
+}
+
+#gridData
+{
+    padding: 20px;
+    width: 100%;
+    border: 1.3px solid beige;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    height: fit-content;
+    gap: 18px;
+}
+
+.dataimage
+{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    background-image: linear-gradient(red,blue);
+    margin-top: 60px;
+}
+
+.matchesPlayed{
+    flex-basis: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    border: 2.3px solid beige;
+    box-shadow: 1.8px 2.3px 4.5px black;
+    background-color: rgb(7, 100, 43);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#playedMatches,#matchesWon,#matchesLost,#username
+{
+    color: white;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1.8px 1.7px 2.8px black;
+    text-align: center;
+}
+
+
+
+
+    
+}
